@@ -30,3 +30,4 @@ async def setup():
 asyncio.run(setup())
 
 bot.run(os.getenv("DISCORD_TOKEN"))
+# test

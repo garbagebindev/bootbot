@@ -18,6 +18,7 @@ intents.message_content = True
 async def on_ready():
     print(f'Logged in as {bot.user} (ID: {bot.user.id})\n--------')
 
+
 @bot.tree.command(name="sync")
 async def sync(interaction: discord.Integration):
     await interaction.response.send_message("Synced!")
@@ -30,4 +31,3 @@ async def setup():
 asyncio.run(setup())
 
 bot.run(os.getenv("DISCORD_TOKEN"))
-# test
